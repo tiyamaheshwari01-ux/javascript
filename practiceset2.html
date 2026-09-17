@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice set</title>
+</head>
+<body>
+
+    <p id="name"></p>
+
+    <script>
+        const myname = "tiyuuuu";
+        console.log(myname);
+        document.querySelector("#name").innerText = myname;
+        const gstpercentage = 18;
+
+
+
+let bagPrice = (15599 - (10 / 100 * 15599)) - 272;
+let jeansPrice = (2499 - (41 / 100 * 2499)) - 29;
+let bagValue = Math.round((jeansPrice + bagPrice - 29 + 25 + 20) * (100+ gstpercentage) / 100);
+let bagSummary = `Your final Myntra Bag amount is ₹${bagValue}`;
+console.log(bagSummary);
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+<!-- use eval method to convert the string calculation into results
+ the eval method actually helps us to evaluate  -->
+
+ <!-- we have seen that when we give twi string for the addition then it concatinate the string togther and then give it as output but even after netering string with eval mathod it gives us actual mathmetical ans as it treate the number same way. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eval method</title>
+ </head>
+ <body>
+    <script>
+        console.log(eval("45+30"))
+    </script>
+ </body>
+ </html>

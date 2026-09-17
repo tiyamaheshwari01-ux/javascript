@@ -1,0 +1,89 @@
+ <!-- button functionality -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more button</title>
+    <style>
+        .button
+        {border-radius: 5px;}
+        #seven
+        {background-color: aquamarine;}
+        #eight
+        {border:10px black;
+        width:150px;}
+        #nine
+        {background-color: aquamarine;}
+
+        #carttotal
+        {display:block;
+        margin-top:20px;}
+
+    </style>
+</head>
+<body>
+    <h2>more buttons</h2>
+    <hr>
+
+
+
+<!-- here we are updating the whole cart quantity from next two line we broughed from bottom of the code and need to add here with the updated value -->
+<button id="seven" class="button"
+onclick="cartquantity = cartquantity + 1;
+document.querySelector('#carttotal').innerText =`your bag has ${cartquantity} items`;">
+add to bag
+</button>
+
+
+<button id ="eight" class = "button" 
+onclick ="cartquantity = cartquantity - 1;
+document.querySelector('#carttotal').innerText =`your bag has ${cartquantity} items`;" > move to wishlist❤️
+</button>
+
+
+
+
+<button id ="nine" class = "button" 
+onclick = "cartquantity = cartquantity + 2;
+document.querySelector('#carttotal').innerText =`your bag has ${cartquantity} items`;">
+add 1 + 1 sale items
+</button>
+
+
+
+
+<p id = "carttotal"></p>
+<br>
+
+
+
+    <!-- the whole set of code gives below helps us for making that statment dynamic as per customers taps on add to cart of whatever button you use. -->
+    <script>
+    // declaring a variable
+    let cartquantity = 0;
+    // using the selector here and we use the id here using the id selector and the mention in the js to change it in run time as per customers clicks in the cript tag with in the"innertext".
+
+    //  here in the inner text we concatinated the values togther wholesum then sustitutiing the 0 with the declared vaue as cart quanitty to make the dnamic changes
+    // document.querySelector("#carttotal").innerText = "Your bag has" +0 +"items";
+
+
+    //  document.querySelector("#carttotal").innerText = " your bag has " +cartquantity+ " items ";
+        // this is using concatenation
+
+
+
+
+
+    //  or the other way to write is...
+
+
+
+
+
+    // this is via using back tics and more easy in js syntax
+    
+    document.querySelector("#carttotal").innerText = `your bag has ${cartquantity} items`;
+    </script>
+</body>
+</html>

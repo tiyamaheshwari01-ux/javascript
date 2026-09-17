@@ -1,0 +1,31 @@
+<!-- VARIABLE  -->
+
+<!-- variables are the container in which values are stored and  can be manipulated throughout a program.
+ there is something called variable name and something called variable value.
+  eg. variable name = "value"
+  a = "tiya"
+  b = 8 etc. -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+  </head>
+  <body>
+    <script>
+        // let firstmessage="tiya";
+        // console.log(firstmessage);
+let bagPrice = (15599 - (10 / 100 * 15599)) - 272;
+let jeansPrice = (2499 - (41 / 100 * 2499)) - 29;
+
+let bagValue = Math.round((jeansPrice + bagPrice - 29 + 25 + 20) * 118 / 100);
+// you can see here that at the right side of the quation you can also give the variable ehich are deiened prior to the variable which is being defined. here we are using bagPrice variable in the definition of jeansPrice variable.
+
+let bagSummary = `Your final Myntra Bag amount is ₹${bagValue}`;
+
+console.log(bagSummary);
+    </script>
+  </body>
+  </html>
