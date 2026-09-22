@@ -1,0 +1,46 @@
+<!-- PRATICE SHEET -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>question 1</title>
+</head>
+<body>
+<script>
+    //create method toh cheak if the no is odd or even.
+    function isodd(){
+     let rem = number% 2;
+     let oddis = rem ==1;
+     return isodd;
+    }
+    console.log(isodd(4));
+    console.log(isodd(23));
+    console.log(isodd(98));
+    console.log(isodd(91));
+
+
+    function larger(num1,num2){
+    // if(num1>num2)
+    //     return num1;
+    // else
+    //     return num2;
+    //using ternorery operator.
+    return num1>num2 ? num1: num2;
+    }
+//if you place the curly bracket after the cosole statment it will never excute bcz of return statment and the code after reutn will be called unreachable code since when you write return it immidiatly exits the function and return what is before the return statment.
+    console.log(larger(4,5));
+    console.log(larger(3,1));
+    console.log(larger(76,34));
+
+    function toFahrenheit(celsiusValue){
+    return 9/5 * celsiusValue + 32;
+    }
+
+    console.log(toFahrenheit(38));
+    console.log(toFahrenheit(0));
+    console.log(toFahrenheit(100));
+
+</script>
+</body>
+</html>

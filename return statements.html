@@ -1,0 +1,40 @@
+<!-- RETURN STATMENTS.
+go do the work and bring that back 
+eg. go and get me a glass of water.
+
+1. Sends a value back from a function.
+2. Example: "Ek glass paani laao"
+3. What Can Be Returned: Value, variable, calculation, etc.
+4. Return ends the function immediately.
+5. Function calls make code jump around.
+6. Prefer returning values over using global variables.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return statement</title>
+</head>
+<body>
+    <script>
+        function generateRandom(){//defining a function 
+
+          let random = maths.random ();//generate a random maths number
+
+          // function value is returned suh a way that use function first the assign it usning assigment opertor at the right side in the syntax.
+           let randomeMove =  random*3;//make that random number three times.
+
+           return randomMove;//return tha value.
+           let randomMove = generateRandom();
+           //let randomMove is the nex variable storing the function called value.
+             // even if we want we can ut this returned value could be stored ina variable.
+           
+           console.log(generateRandom());
+           // here the returned value is subsituted in the console statment.
+         
+        }
+    </script>
+</body>
+</html>

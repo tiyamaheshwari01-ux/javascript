@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return staments
+    </title>
+</head>
+<body>
+    <script>
+        function determinedrivestatus(){
+            let age = 21;
+            if(age === undefined){
+                return'aap  aavtar hain';
+                // the rule is never to return the statment at the end of the code. but the point is retun end the function immideatly.
+            }
+            
+            if (age>18){
+                return 'you can drive';
+            }
+            else{
+                return'you can not drive';
+            }
+        }
+        console.log(determinedrivestatus());
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+   <script>
+    let age=20;
+    function printAge(){
+        console.log(`my age is${age}`);
+    }
+    // here we defined function inside which  we defined a function body or the main satment which we want repeat later on in out code and there must be gap in function declationtion statment and the function body as you can see.
+    
+    printAge();
+    //this is how you call function. this statements tells the computer that go and see whatever exist in this function please execute it.
+
+
+
+    age=21;
+    //console.log(`my age is${age}`);
+    printAge();
+
+
+    age=22;
+    //console.log(`my age is${age}`); uaing the function call instaead of repeating the code this is so much helpful in making code effcients with lge set of code.
+     printAge();
+    //for every time we update the statment we need to use the sameblock of code. agin n again saying to update we write the console.log()
+
+
+   </script>
+
+</body>
+</html>
+
+
+<!-- //with in ufcntion the order of execution jump aroung and dont excure in a single line step by step as the function is declared. -->
+
+
+
+<!-- function calling and function envoking is just the same thing -->
+
+
+<!-- fuction may be assigned once in the code but as soon as you use that function multiple time and call it then it will return all those.
+function over writes the new function.
+<ex->
+    function add(a, b) {
+    console.log("First version");
+}
+
+function add(a, b) {
+    console.log("Second version");
+}
+
+add(2, 3);
+//output will be the second version since function over writes the previous one and only focus and the latest. -->
+</ex->
